@@ -1,8 +1,11 @@
 {
-  "name":"tamil-digital-studio",
+  "name": "tamil-digital-studio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
