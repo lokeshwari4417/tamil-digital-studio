@@ -1,0 +1,305 @@
+import { ServiceItem } from '../types';
+
+export const servicesData: ServiceItem[] = [
+  // -------------------------------------------------------------
+  // 1. PHOTOGRAPHY CATEGORY (11 Services)
+  // -------------------------------------------------------------
+  {
+    id: 'events-and-parties',
+    title: 'Events and Parties',
+    subtitle: 'Vibrant coverage for birthdays, anniversaries & celebrations',
+    iconName: 'PartyPopper',
+    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Complete event photography preserving laughter, guests, and joyous moments.',
+    fullDescription: 'From intimate family birthdays and puberty functions to grand milestone parties, our event photography captures every highlight in rich, vivid detail.',
+    highlights: ['Full Celebration Coverage', 'High-Speed Digital Delivery', 'Group & Candid Shots', 'On-Location Lighting Setup'],
+    benefits: ['Experienced event photographers', 'Quick turnaround time', 'Affordable event packages'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'weddings',
+    title: 'Weddings',
+    subtitle: 'Complete marriage ceremony & reception photography',
+    iconName: 'Heart',
+    image: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Comprehensive traditional Tamil wedding photography crafted with artistic perfection.',
+    fullDescription: 'We document every sacred ritual, muhurtham moment, and grand reception with emotional depth, ensuring your wedding story shines forever.',
+    highlights: ['Multi-Photographer Team', 'Traditional & Ritual Coverage', 'High-Res Digital Files', 'Luxury Photobook Options'],
+    benefits: ['10+ years covering weddings in Tirukazhukundram', 'Dual-camera backup', 'High-speed proofing link'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    popular: true,
+    whatsappContext: 'wedding'
+  },
+  {
+    id: 'wedding-and-engagement',
+    title: 'Wedding & Engagement',
+    subtitle: 'Combined engagement ceremony & pre-wedding stories',
+    iconName: 'Sparkles',
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Romantic engagement session and full marriage event combo package.',
+    fullDescription: 'Celebrate your journey from betrothal to the wedding altar. We craft romantic engagement portraiture paired with complete ceremony documentation.',
+    highlights: ['Engagement Ceremony Coverage', 'Couple Portrait Session', 'Custom Save-The-Date Reels', 'Combined Package Savings'],
+    benefits: ['Consistent visual theme across events', 'Dedicated lead photographer', 'Custom album design'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'wedding'
+  },
+  {
+    id: 'candid-photography',
+    title: 'Candid Photography',
+    subtitle: 'Natural, unposed emotional storytelling',
+    iconName: 'Camera',
+    image: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Capturing genuine smiles, tears of joy, and subtle unscripted interactions.',
+    fullDescription: 'Our candid photography specialists focus on unscripted, natural moments that happen organically throughout your wedding or event without forced posing.',
+    highlights: ['Unobtrusive Shooting Style', 'Natural Expression Capture', 'Artistic Bokeh & Lighting', 'Cinematic Colour Grading'],
+    benefits: ['Real, authentic memories', 'Zero awkward posing required', 'Magazine-style composition'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    popular: true,
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'baby-shoots',
+    title: 'Baby Shoots',
+    subtitle: 'Milestones, newborn themes & 1st birthday cake smashes',
+    iconName: 'Smile',
+    image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Adorable, baby-safe milestone photography in studio or outdoor setups.',
+    fullDescription: 'Capture your little one’s early months, cute smiles, and 1st birthday celebrations in a sanitized, patient studio environment with fun props.',
+    highlights: ['Sanitized Baby Props', '1st Birthday Cake Smash', 'Monthly Milestone Shoots', 'Family Portrait Inclusion'],
+    benefits: ['Patient & gentle photographers', 'Flexible schedules around baby naps', 'Adorable custom themes'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'outdoor-photography',
+    title: 'Outdoor Photography',
+    subtitle: 'Golden hour portraits & scenic nature locations',
+    iconName: 'Sun',
+    image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Sunlit couple, individual, and pre-wedding portraiture in scenic destinations.',
+    fullDescription: 'Experience the magic of outdoor golden-hour lighting. We guide couples and families to scenic spots around Mamallapuram beaches and Tirukazhukundram hills.',
+    highlights: ['Golden Hour Sunset Shoots', 'Scenic Location Scouting', 'Natural Posing Guidance', 'High-Speed Wireless Flash'],
+    benefits: ['Breathtaking natural backdrops', 'Relaxed outdoor atmosphere', 'Stunning sun-drenched visuals'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'studio-sessions',
+    title: 'Studio Sessions',
+    subtitle: 'Controlled studio lighting & multi-background setups',
+    iconName: 'UserCheck',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Professional studio setup with softbox lighting for families and individuals.',
+    fullDescription: 'Step into our air-conditioned digital studio for high-definition portraits featuring multi-colored backdrops, beauty diffusers, and instant screen selection.',
+    highlights: ['Multi-Background Setups', 'Softbox Diffuser Lighting', 'Instant On-Screen Selection', 'Air-Conditioned Comfort'],
+    benefits: ['100% weather independent', 'Instant preview', 'Professional skin retouching'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'portrait-sessions',
+    title: 'Portrait Sessions',
+    subtitle: 'Personalized portraiture for individuals & couples',
+    iconName: 'User',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Tailored portraiture highlighting your personality and style.',
+    fullDescription: 'Whether celebrating a milestone or creating personal portraits, we craft images that highlight your natural confidence and character.',
+    highlights: ['Posing Assistance', 'Multiple Outfit Changes', 'High-Res Digital Files', 'Custom Touch-ups'],
+    benefits: ['Tailored creative direction', 'Relaxed session environment', 'Prompt digital delivery'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'headshots-and-portraits',
+    title: 'Headshots and Portraits',
+    subtitle: 'Corporate profiles, LinkedIn & professional headshots',
+    iconName: 'Award',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Clean executive headshots for business profiles and resumes.',
+    fullDescription: 'Make a powerful professional impression with high-impact corporate headshots formatted for LinkedIn, websites, and business publications.',
+    highlights: ['Neutral Backdrop Options', 'Professional Posing Guidance', 'Skin Tone Color Balance', 'High-Res Retouched Images'],
+    benefits: ['Enhance your professional brand', 'Fast 24-hour turnaround', 'Web & print optimized files'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'senior-portraits',
+    title: 'Senior Portraits',
+    subtitle: 'Graduation & milestone student portraiture',
+    iconName: 'GraduationCap',
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Commemorating academic achievements and graduation milestones.',
+    fullDescription: 'Celebrate graduation and academic milestones with dignified senior portraits featuring caps, gowns, degree scrolls, and personal props.',
+    highlights: ['Graduation Gown Props', 'Degree Scroll Styling', 'Individual & Family Shots', 'Desk Frame Packages'],
+    benefits: ['Lifetime keepsake', 'Special student package rates', 'High-quality prints'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+  {
+    id: 'product-photography',
+    title: 'Product Photography',
+    subtitle: 'Clean e-commerce & commercial product shoots',
+    iconName: 'Box',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'High-clarity commercial product photos for catalogs and online stores.',
+    fullDescription: 'Boost your business sales with crisp product photos shot on pure white or textured backgrounds, optimized for Amazon, Flipkart, and Instagram shops.',
+    highlights: ['Pure White Background (PNG/JPG)', 'Macro Detail Shots', 'Color Accuracy Calibration', 'Shadow & Reflection Control'],
+    benefits: ['Increase online conversion', 'E-commerce website ready', 'Batch pricing available'],
+    category: 'photography',
+    categoryLabel: 'PHOTOGRAPHY',
+    whatsappContext: 'photography'
+  },
+
+  // -------------------------------------------------------------
+  // 2. VIDEOGRAPHY & EVENTS CATEGORY (4 Services)
+  // -------------------------------------------------------------
+  {
+    id: 'videography',
+    title: 'Videography',
+    subtitle: '4K event films, cinematic trailers & full coverage',
+    iconName: 'Video',
+    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'High-definition 4K video recording for weddings, functions, and events.',
+    fullDescription: 'Capture your events in motion. We produce 4K cinematic wedding trailers, full-length ritual recordings, and high-fidelity audio mixes.',
+    highlights: ['4K Cinema Cameras', 'Wireless Mic Audio Capture', 'Instagram Teaser Reels', 'Pen Drive & Cloud Delivery'],
+    benefits: ['Pro multi-cam editing', 'Crystal-clear audio', 'Cinematic background music'],
+    category: 'videography',
+    categoryLabel: 'VIDEOGRAPHY & EVENTS',
+    popular: true,
+    whatsappContext: 'wedding'
+  },
+  {
+    id: 'photo-booth',
+    title: 'Photo Booth',
+    subtitle: 'Interactive instant print booth for wedding guests',
+    iconName: 'Camera',
+    image: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Fun interactive photo booth with instant printouts and custom props.',
+    fullDescription: 'Add extra joy to your reception or party! Guests pose with fun props and receive instant lab-printed photo souvenirs customized with your event logo.',
+    highlights: ['Instant Photo Prints', 'Customized Event Overlay', 'Fun Theme Props', 'On-Site Booth Operator'],
+    benefits: ['Unforgettable guest entertainment', 'Instant physical souvenir', 'High guest engagement'],
+    category: 'videography',
+    categoryLabel: 'VIDEOGRAPHY & EVENTS',
+    whatsappContext: 'general'
+  },
+  {
+    id: '360-video-booth',
+    title: '360 Video Booth',
+    subtitle: 'Trending 360-degree rotating slow-motion video booth',
+    iconName: 'RotateCcw',
+    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Dynamic 360-degree slow-motion video spinner with instant QR download.',
+    fullDescription: 'Elevate your party with the latest 360 video booth! Guests step onto the platform as a rotating camera captures slow-mo video effects with custom music overlays.',
+    highlights: ['360 Rotating Motor Platform', 'Slow-Motion & Reverse Effects', 'Instant QR Code Download', 'Custom Event Branding'],
+    benefits: ['Trending social media content', 'Instant video sharing for guests', 'Eye-catching party setup'],
+    category: 'videography',
+    categoryLabel: 'VIDEOGRAPHY & EVENTS',
+    popular: true,
+    whatsappContext: 'general'
+  },
+  {
+    id: 'led-wall',
+    title: 'LED Wall',
+    subtitle: 'High-brightness outdoor video walls & live broadcast',
+    iconName: 'Tv',
+    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Outdoor P3/P4 LED screens and live video mixer broadcasting.',
+    fullDescription: 'Ensure every guest enjoys a clear view of stage rituals. We provide outdoor LED screens, multi-camera live video mixing, and crane setups for weddings and functions.',
+    highlights: ['Outdoor P3/P4 LED Display Walls', 'Live Video Camera Mixer', 'Daylight High Brightness', 'On-Site Technical Crew'],
+    benefits: ['Clear visibility for large crowds', 'Seamless modular screen size', 'Complete video cabling included'],
+    category: 'videography',
+    categoryLabel: 'VIDEOGRAPHY & EVENTS',
+    whatsappContext: 'wedding'
+  },
+
+  // -------------------------------------------------------------
+  // 3. PRINTING & PHOTO PRODUCTS CATEGORY (4 Services)
+  // -------------------------------------------------------------
+  {
+    id: 'photo-albums',
+    title: 'Photo Albums',
+    subtitle: 'Custom flush-mount photobooks & luxury albums',
+    iconName: 'BookOpen',
+    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Premium lay-flat flush-mount albums printed on archival luster paper.',
+    fullDescription: 'Turn your wedding and event photos into heirloom photobooks. Featuring lay-flat panoramic pages, velvet leather covers, and anti-scratch UV laminations.',
+    highlights: ['Lay-Flat Flush-Mount Pages', 'Velvet, Leather & Acrylic Covers', '100+ Year Archival Paper', 'Custom Designer Layouts'],
+    benefits: ['Durable scratch-resistant pages', 'Vibrant color fidelity', 'Lifetime family keepsake'],
+    category: 'printing',
+    categoryLabel: 'PRINTING & PHOTO PRODUCTS',
+    popular: true,
+    whatsappContext: 'printing'
+  },
+  {
+    id: 'photo-frames',
+    title: 'Photo Frames',
+    subtitle: 'Designer synthetic, teak wood & acrylic wall frames',
+    iconName: 'Frame',
+    image: 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Custom photo framing in wood, acrylic, glass, and synthetic finishes.',
+    fullDescription: 'Decorate your home with elegant wall frames. We offer over 100 frame mouldings, non-reflective glass, and high-definition photo prints in all sizes.',
+    highlights: ['Teak Wood & Modern Synthetic Mouldings', 'High-Gloss & Acrylic Mounting', 'Custom Wall & Tabletop Sizes', 'Anti-Glare Glass Options'],
+    benefits: ['Enhance home decor', 'Protection against dust & moisture', 'Same-day framing options'],
+    category: 'printing',
+    categoryLabel: 'PRINTING & PHOTO PRODUCTS',
+    whatsappContext: 'printing'
+  },
+  {
+    id: 'sublimation-printing',
+    title: 'Sublimation Printing',
+    subtitle: 'Custom photo mugs, cushions, keychains & gift items',
+    iconName: 'Gift',
+    image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'High-quality personalized photo gifts printed with your favorite photos.',
+    fullDescription: 'Surprise your loved ones with customized magic heat mugs, photo cushions, keychains, desktop acrylic blocks, and personalized photo gifts created in-house.',
+    highlights: ['Magic & Ceramic Photo Mugs', 'Sublimation Pillows & Cushions', 'Acrylic Blocks & Keychains', 'Fast In-House Printing'],
+    benefits: ['Vibrant fade-proof prints', 'Perfect birthday & holiday gifts', 'Quick turnaround time'],
+    category: 'printing',
+    categoryLabel: 'PRINTING & PHOTO PRODUCTS',
+    popular: true,
+    whatsappContext: 'sublimation'
+  },
+  {
+    id: 'printing-services',
+    title: 'Printing Services',
+    subtitle: 'Digital photo lab prints, passport photos & posters',
+    iconName: 'Printer',
+    image: 'https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'All-in-one digital photo lab, passport photos, and color printing services.',
+    fullDescription: 'From instant 5-minute passport photos to large format banner prints, our colour lab delivers sharp resolution and rich color contrast.',
+    highlights: ['Instant 5-Minute Passport Photos', 'High-Gloss & Luster Prints', 'Large Format Poster Prints', 'Document & Card Printing'],
+    benefits: ['Instant service', '100% Embassy compliant passport shots', 'Crisp digital clarity'],
+    category: 'printing',
+    categoryLabel: 'PRINTING & PHOTO PRODUCTS',
+    whatsappContext: 'printing'
+  },
+
+  // -------------------------------------------------------------
+  // 4. DELIVERY CATEGORY (1 Service)
+  // -------------------------------------------------------------
+  {
+    id: 'delivery',
+    title: 'Delivery',
+    subtitle: 'Convenient local delivery for photo frames & albums',
+    iconName: 'Truck',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
+    shortDescription: 'Hassle-free delivery of finished photobooks and large frames to your doorstep.',
+    fullDescription: 'Enjoy local delivery for heavy wall frames, custom photo gifts, and wedding photobooks in Tirukazhukundram and nearby surrounding areas.',
+    highlights: ['Safe Protective Frame Packaging', 'Doorstep Local Delivery', 'Convenient Timing', 'Coverage across Tirukazhukundram Area'],
+    benefits: ['No risk of frame glass breakage during transport', 'Save travel time', 'Track order status via WhatsApp'],
+    category: 'delivery',
+    categoryLabel: 'DELIVERY',
+    whatsappContext: 'delivery'
+  }
+];
