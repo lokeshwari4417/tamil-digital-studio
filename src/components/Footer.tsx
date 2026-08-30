@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, Mail, Instagram, Facebook, MapPin, Star } from 'lucide-react';
 import { Logo } from './Logo';
 import { businessData } from '../data/business';
+import { InstallAppButton } from './InstallAppButton';
 
 interface FooterProps {
   onNavigate: (id: string) => void;
@@ -45,20 +46,24 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               Photo studio offering photo frames, albums, digital printing services, 4K videography, 360 video booths, and event photography in Tirukazhukundram.
             </p>
 
-            {/* Google Review Badge */}
-            <a
-              href={businessData.address.googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 text-amber-400 border border-slate-700 text-xs font-semibold hover:border-amber-500 transition-colors"
-            >
-              <div className="flex items-center gap-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 text-amber-400 fill-amber-400" />
-                ))}
-              </div>
-              <span>{businessData.rating.score} / 5 ({businessData.rating.reviewsCount} Reviews)</span>
-            </a>
+            {/* Google Review Badge & Install App CTA */}
+            <div className="flex flex-wrap items-center gap-2.5 pt-1">
+              <a
+                href={businessData.address.googleReviewsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 text-amber-400 border border-slate-700 text-xs font-semibold hover:border-amber-500 transition-colors"
+              >
+                <div className="flex items-center gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3 h-3 text-amber-400 fill-amber-400" />
+                  ))}
+                </div>
+                <span>{businessData.rating.score} / 5 ({businessData.rating.reviewsCount} Reviews)</span>
+              </a>
+
+              <InstallAppButton variant="footer" />
+            </div>
 
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-2">

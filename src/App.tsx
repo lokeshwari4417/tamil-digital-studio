@@ -22,6 +22,8 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { ScrollToTop } from './components/ScrollToTop';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { PwaInstallPrompt } from './components/PwaInstallPrompt';
+import { IosInstallModal } from './components/IosInstallModal';
+import { PwaProvider } from './context/PwaContext';
 
 export function App() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -67,7 +69,7 @@ export function App() {
   }, []);
 
   return (
-    <>
+    <PwaProvider>
       {/* Signature Preloader Screen */}
       {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
 
@@ -120,10 +122,11 @@ export function App() {
           onNavigate={scrollToSection}
         />
 
-        {/* PWA Install Banner */}
+        {/* PWA Install Banner & iOS Modal */}
         <PwaInstallPrompt />
+        <IosInstallModal />
       </motion.div>
-    </>
+    </PwaProvider>
   );
 }
 

@@ -4,6 +4,9 @@ import { X, Phone, MessageSquare, ArrowRight, Camera, Facebook, Instagram } from
 import { Logo } from './Logo';
 import { businessData } from '../data/business';
 import { openWhatsApp } from '../utils/whatsapp';
+import { servicesData } from '../data/services';
+
+import { InstallAppButton } from './InstallAppButton';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -23,7 +26,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
   const navLinks = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About Us' },
-    { id: 'services', label: '24 Services' },
+    { id: 'services', label: `${servicesData.length} Services` },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'packages', label: 'Packages' },
     { id: 'process', label: 'How It Works' },
@@ -92,6 +95,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
 
             {/* Bottom Actions */}
             <div className="p-6 border-t border-slate-100 bg-slate-50/50 space-y-3">
+              <InstallAppButton variant="mobile-menu" onSuccess={onClose} />
+
               <button
                 onClick={() => {
                   onBookClick();

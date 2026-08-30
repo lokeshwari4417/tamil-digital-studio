@@ -2,7 +2,7 @@ import { ServiceItem } from '../types';
 
 export const servicesData: ServiceItem[] = [
   // -------------------------------------------------------------
-  // 1. PHOTOGRAPHY CATEGORY (11 Services)
+  // 1. PHOTOGRAPHY CATEGORY (10 Services)
   // -------------------------------------------------------------
   {
     id: 'events-and-parties',
@@ -128,20 +128,6 @@ export const servicesData: ServiceItem[] = [
     fullDescription: 'Make a powerful professional impression with high-impact corporate headshots formatted for LinkedIn, websites, and business publications.',
     highlights: ['Neutral Backdrop Options', 'Professional Posing Guidance', 'Skin Tone Color Balance', 'High-Res Retouched Images'],
     benefits: ['Enhance your professional brand', 'Fast 24-hour turnaround', 'Web & print optimized files'],
-    category: 'photography',
-    categoryLabel: 'PHOTOGRAPHY',
-    whatsappContext: 'photography'
-  },
-  {
-    id: 'senior-portraits',
-    title: 'Senior Portraits',
-    subtitle: 'Graduation & milestone student portraiture',
-    iconName: 'GraduationCap',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800',
-    shortDescription: 'Commemorating academic achievements and graduation milestones.',
-    fullDescription: 'Celebrate graduation and academic milestones with dignified senior portraits featuring caps, gowns, degree scrolls, and personal props.',
-    highlights: ['Graduation Gown Props', 'Degree Scroll Styling', 'Individual & Family Shots', 'Desk Frame Packages'],
-    benefits: ['Lifetime keepsake', 'Special student package rates', 'High-quality prints'],
     category: 'photography',
     categoryLabel: 'PHOTOGRAPHY',
     whatsappContext: 'photography'

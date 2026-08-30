@@ -3,7 +3,8 @@ import { Menu, Camera, Phone, Sparkles, MessageSquare } from 'lucide-react';
 import { Logo } from './Logo';
 import { MobileMenu } from './MobileMenu';
 import { businessData } from '../data/business';
-import { openWhatsApp } from '../utils/whatsapp';
+import { servicesData } from '../data/services';
+import { InstallAppButton } from './InstallAppButton';
 
 interface NavbarProps {
   activeSection: string;
@@ -30,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'services', label: '24 Services' },
+    { id: 'services', label: `${servicesData.length} Services` },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'packages', label: 'Packages' },
     { id: 'contact', label: 'Contact' },
@@ -83,6 +84,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Right Action CTAs */}
             <div className="hidden lg:flex items-center gap-3">
+              <InstallAppButton variant="navbar" />
+
               <a
                 href={`tel:${businessData.phone.replace(/\s+/g, '')}`}
                 className="flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold text-charcoal hover:text-brand-700 transition-colors"
