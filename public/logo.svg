@@ -1,53 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" width="100%" height="100%">
   <defs>
-    <!-- Background Circle Gradient: Vibrant Orange/Red Circular Camera Element -->
-    <linearGradient id="cameraGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EA580C" />
+    <!-- Gradient for Orange Lens Circle -->
+    <linearGradient id="orangeLensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" />
       <stop offset="50%" stop-color="#F97316" />
-      <stop offset="100%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#EA580C" />
     </linearGradient>
 
-    <!-- Ring Accent Gold -->
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B" />
-      <stop offset="100%" stop-color="#D97706" />
-    </linearGradient>
-
-    <!-- Teal Gradient for Brand Accent -->
-    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F766E" />
-      <stop offset="100%" stop-color="#0D9488" />
-    </linearGradient>
+    <!-- Import Cursive Font for Studio... -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Outfit:wght@900&amp;display=swap');
+      .logo-tamil {
+        font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        font-weight: 900;
+        fill: #0F172A;
+        font-size: 78px;
+        letter-spacing: -1.5px;
+      }
+      .logo-studio {
+        font-family: 'Caveat', 'Brush Script MT', cursive;
+        font-weight: 700;
+        fill: #E11D48;
+        font-size: 68px;
+      }
+    </style>
   </defs>
 
-  <!-- Outer Camera Circle Body -->
-  <circle cx="256" cy="256" r="240" fill="url(#cameraGradient)" />
+  <!-- CAMERA BODY OUTLINE (Black rounded camera frame) -->
+  <g transform="translate(10, 10)">
+    <!-- Top Flash / Pentaprism Bump -->
+    <path d="M 62 48 L 78 24 C 80 21, 84 18, 90 18 L 130 18 C 136 18, 140 21, 142 24 L 158 48 Z" fill="none" stroke="#0F172A" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" />
+    
+    <!-- Main Camera Outer Box -->
+    <rect x="20" y="48" width="180" height="132" rx="28" ry="28" fill="none" stroke="#0F172A" stroke-width="12" stroke-linecap="round" />
 
-  <!-- Camera Lens Outer Ring -->
-  <circle cx="256" cy="256" r="170" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-opacity="0.9" />
+    <!-- ORANGE LENS CIRCLE -->
+    <circle cx="110" cy="114" r="50" fill="url(#orangeLensGrad)" />
+    <circle cx="110" cy="114" r="50" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.8" />
 
-  <!-- Gold Lens Accent Ring -->
-  <circle cx="256" cy="256" r="140" fill="none" stroke="url(#goldGradient)" stroke-width="12" />
+    <!-- Aperture / Silhouette Details inside Lens -->
+    <g stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+      <!-- Radiating aperture lines -->
+      <line x1="110" y1="64" x2="110" y2="78" />
+      <line x1="110" y1="150" x2="110" y2="164" />
+      <line x1="60" y1="114" x2="74" y2="114" />
+      <line x1="146" y1="114" x2="160" y2="114" />
+      <line x1="75" y1="79" x2="86" y2="90" />
+      <line x1="134" y1="138" x2="145" y2="149" />
+      <line x1="145" y1="79" x2="134" y2="90" />
+      <line x1="86" y1="138" x2="75" y2="149" />
+    </g>
 
-  <!-- Inner Dark Camera Aperture Chamber -->
-  <circle cx="256" cy="256" r="110" fill="#0F172A" />
-
-  <!-- Shutter Blades -->
-  <g fill="#FFFFFF" opacity="0.85">
-    <path d="M256 146 L296 216 L256 226 Z" />
-    <path d="M366 256 L296 296 L286 256 Z" opacity="0.9" />
-    <path d="M256 366 L216 296 L256 286 Z" opacity="0.8" />
-    <path d="M146 256 L216 216 L226 256 Z" opacity="0.95" />
+    <!-- Center White Lens Reflection / Silhouette Spark -->
+    <circle cx="102" cy="106" r="8" fill="#FFFFFF" opacity="0.9" />
+    <path d="M106 100 Q120 110, 114 126" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
   </g>
 
-  <!-- Central Camera Lens Glass -->
-  <circle cx="256" cy="256" r="54" fill="url(#tealGradient)" />
-  <circle cx="256" cy="256" r="44" fill="#0D9488" />
+  <!-- TEXT BRANDING -->
+  <!-- "Tamil" Text -->
+  <text x="215" y="112" class="logo-tamil">Tamil</text>
 
-  <!-- Lens Reflection Flash Light -->
-  <circle cx="236" cy="236" r="14" fill="#FFFFFF" opacity="0.9" />
-  <circle cx="270" cy="270" r="6" fill="#FFFFFF" opacity="0.6" />
-
-  <!-- Camera Top Flash/Shutter Button Accent -->
-  <path d="M216 26 L296 26 L286 56 L226 56 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- "Studio..." Script Text -->
+  <text x="220" y="172" class="logo-studio">Studio...</text>
 </svg>
