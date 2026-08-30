@@ -1,9 +1,9 @@
-const CACHE_NAME = 'tamil-studio-v2';
+const CACHE_NAME = 'tamil-studio-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
-  '/logo.svg',
-  '/favicon.svg',
+  '/logo.png',
+  '/favicon.png',
   '/manifest.json',
   '/sitemap.xml',
   '/robots.txt'
